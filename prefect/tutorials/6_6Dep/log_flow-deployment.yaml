@@ -3,13 +3,20 @@
 ###
 name: log-simple
 description: null
-version: 450637a8874a5dd3a81039a89e90c915
+version: 021532ed8280237ae3de8bc77de9517d
 # The work queue that will handle this deployment's runs
 work_queue_name: test
 tags: []
-parameters: {'name':'Marvin'}
+parameters:
+  name: Marvin
 schedule: null
 infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: log-flow
+manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -20,14 +27,11 @@ infrastructure:
   - -m
   - prefect.engine
   stream_output: true
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: log-flow
-manifest_path: null
+  _block_document_id: 26907890-fef4-4dfa-8ac1-0cf4189aea60
+  _block_document_name: anonymous-f6945e40-56bd-477d-a7ce-6294b8f2b8f6
+  _is_anonymous: true
 storage: null
-path:  /home/paulayling/Documents/dev/GFPlayground/prefect/tutorials/6_Deployment
+path: /home/paulayling/Documents/dev/GFPlayground/prefect/tutorials/6_6Dep
 entrypoint: log_flow.py:log_flow
 parameter_openapi_schema:
   title: Parameters

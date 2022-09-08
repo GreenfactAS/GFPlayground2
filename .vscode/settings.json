@@ -4,7 +4,24 @@
       "titleBar.inactiveForeground": "#000000CC",
       "titleBar.activeBackground": "#f542f5",
       "titleBar.inactiveBackground": "#f56642"
-    }
+    },
+    "sqltools.connections": [
+      {
+        "mssqlOptions": {
+          "appName": "SQLTools",
+          "useUTC": true,
+          "encrypt": true
+        },
+        "previewLimit": 50,
+        "server": "http://greenfact.database.windows.net/",
+        "port": 1433,
+        "askForPassword": true,
+        "driver": "MSSQL",
+        "name": "Cleanworld",
+        "database": "greenfact-prod-2",
+        "username": "gfreadonly"
+      }
+    ]
   }
   
   
